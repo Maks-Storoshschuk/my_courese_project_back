@@ -1,0 +1,17 @@
+[
+  {
+    "_id": 1,
+    "userId": 15,
+    "userEmail": "fshsf@gmail.com",
+    "placeId": 21,
+    "reserve": "1234567890-",
+    "goal": "святкування дн",
+    "details": {
+      "maleCount":2,
+      "femaleCount": 3,
+      "desiredAmount" : "200$",
+      "pays": "сусід зліва"
+    },
+    "status": true
+  }
+]

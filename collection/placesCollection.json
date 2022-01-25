@@ -1,0 +1,49 @@
+[
+  {
+    "_id": 13,
+    "adminId": 56,
+    "schedule": "з 12:00 до 2:00 без вихідних",
+    "name": "Лайм Клуб",
+    "type": "club",
+    "averagePrice": 460,
+    "specifics": [
+      "Wi-Fi",
+      "парковка",
+      "жива музика"
+    ],
+    "address": {
+      "city": "Львів",
+      "street": "Пасічна",
+      "houseNumber": "22 А",
+      "Geo": {
+        "latitude": 49.8318597,
+        "longitude": 24.0659814
+      }
+    },
+    "photos": [
+      "https://aws.....",
+      "https://aws.....",
+      "https://aws....."
+    ],
+    "description": "наш заклад найкращий і все таке",
+    "commentsId": [
+      [21,33,46]
+    ],
+    "news_id": [1,3,98],
+    "ratingUsers": {
+      "1StarUserId": [],
+      "2StarUserId": [3,45],
+      "3StarUserId": [23,17],
+      "4StarUserId": [21,47,6],
+      "5StarUserId": [22,45,67]
+    },
+    "contacts": {
+      "phone": "093000000",
+      "email": "ratata@gmail.com"
+    },
+    "tags": ["vodka"],
+    "status": true,
+    "createdAt": "12.12.2012"
+  }
+]
+

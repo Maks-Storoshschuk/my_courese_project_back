@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "placeId": 13,
+    "category": "events",
+    "title": "День студента",
+    "description": "14 березня або хер зна коли, відбудеться вечірка ....",
+    "picture": "https://aws.....",
+    "price": 200,
+    "status": false
+  }
+]

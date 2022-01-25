@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 43,
+    "name": "Макс",
+    "surname": "Сторощук",
+    "email": "ratata@gmail.com",
+    "password": "12345678",
+    "role": "user",
+    "avatar": "https://aws...",
+    "isCritic": false,
+    "favoritePlacesId": [13,52,33],
+    "commentsId": [2,87,14],
+    "ratingPlaces": {
+      "1StarPlacesId": [],
+      "2StarPlacesId": [3,45],
+      "3StarPlacesId": [23,17],
+      "4StarPlacesId": [21,47,6],
+      "5StarPlacesId": [22,45,67]
+    },
+    "createdAt": "12.12.2012"
+  }
+]
