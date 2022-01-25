@@ -1,11 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const {MONGO_CONNECT_URL,PORT} = require('./configs/config');
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('mongodb://localhost:27017/drinker');
+mongoose.connect(MONGO_CONNECT_URL);
 
 const {usersRouter,commentsRouter,drinkerRouter,placesRouter,newsRouter}= require ('./routes');
 
@@ -15,7 +17,7 @@ app.use('/drinker',drinkerRouter);
 app.use('/news',newsRouter);
 app.use('/comments',commentsRouter);
 
-app.listen(5000, () => {
-    console.log(`app listen 5000`);
+app.listen(PORT, () => {
+    console.log(`app listen ${PORT}`);
 });
 

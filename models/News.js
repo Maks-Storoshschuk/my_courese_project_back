@@ -1,5 +1,7 @@
 const {Schema, model} = require('mongoose');
 
+const {newsCategory} = require('../constants');
+
 const newsSchema = new Schema({
     placeId: {
         type: String,
@@ -8,11 +10,7 @@ const newsSchema = new Schema({
     category: {
         type: String,
         required: true,
-        enum: [
-            'загальні',
-            'акції',
-            'події'
-        ]
+        enum:newsCategory
     },
     title: {
         type: String

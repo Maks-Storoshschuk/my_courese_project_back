@@ -1,5 +1,7 @@
 const {Schema, model} = require('mongoose');
 
+const {placeType} = require('../constants');
+
 const placeSchema = new Schema({
     adminId: {
         type: String,
@@ -16,11 +18,7 @@ const placeSchema = new Schema({
     type: {
         type: String,
         required: true,
-        enum: [
-            'Клуб',
-            'Ресторан',
-            'Паб'
-        ]
+        enum: placeType
     },
     averagePrice: {
         type: Number
