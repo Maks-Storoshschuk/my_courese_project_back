@@ -16,5 +16,26 @@ module.exports = {
         } catch (e) {
             res.json(e);
         }
-    }
+    },
+
+    getUserById: async (req, res) => {
+        try {
+            const {id} = req.params;
+            const user = await User.findById(id);
+            res.json(user);
+        } catch (e) {
+            res.json(e);
+        }
+    },
+
+    delete: async (req, res) => {
+        try {
+            const {id} = req.params;
+            const user = await User.findByIdAndDelete(id);
+            res.json(user);
+        } catch (e) {
+            res.json(e);
+        }
+    },
+
 };

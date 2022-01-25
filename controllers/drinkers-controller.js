@@ -9,6 +9,7 @@ module.exports = {
             res.json(e);
         }
     },
+
     reserveDrinker: async (req, res) => {
         try {
             const newReserve = await Drinker.create(req.body);
@@ -16,5 +17,25 @@ module.exports = {
         } catch (e) {
             res.json(e);
         }
-    }
+    },
+
+    getDrinkerById: async (req, res) => {
+        try {
+            const {id} = req.params;
+            const drinker = await Drinker.findById(id);
+            res.json(drinker);
+        } catch (e) {
+            res.json(e);
+        }
+    },
+
+    delete: async (req, res) => {
+        try {
+            const {id} = req.params;
+            const drinker = await Drinker.findByIdAndDelete(id);
+            res.json(drinker);
+        } catch (e) {
+            res.json(e);
+        }
+    },
 };

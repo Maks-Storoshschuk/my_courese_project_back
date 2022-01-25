@@ -17,5 +17,25 @@ module.exports = {
         } catch (e) {
             res.json(e);
         }
-    }
+    },
+
+    getCommentById: async (req, res) => {
+        try {
+            const {id} = req.params;
+            const comment = await Comment.findById(id);
+            res.json(comment);
+        } catch (e) {
+            res.json(e);
+        }
+    },
+
+    delete: async (req, res) => {
+        try {
+            const {id} = req.params;
+            const comment = await Comment.findByIdAndDelete(id);
+            res.json(comment);
+        } catch (e) {
+            res.json(e);
+        }
+    },
 };
