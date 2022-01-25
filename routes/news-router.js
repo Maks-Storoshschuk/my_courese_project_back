@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-    res.json(require('../collection/newsCollection.json'))
-});
+const {newsController} = require('../controllers')
+
+router.get('/',newsController.getNews );
 
 module.exports = router;

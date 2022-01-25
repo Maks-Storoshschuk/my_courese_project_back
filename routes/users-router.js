@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-router().get('/', (req, res) => {
-    res.json(require('../collection/usersCullection.json'))
-});
+const {usersController} = require('../controllers')
+
+router.get('/',usersController.getUsers);
 
 module.exports = router;

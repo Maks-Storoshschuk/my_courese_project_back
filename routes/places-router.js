@@ -1,8 +1,7 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-    res.json(require('../collection/placesCollection.json')
-    )
-});
+const {placesController} = require('../controllers')
+
+router.get('/',placesController.getPlaces );
 
 module.exports = router;

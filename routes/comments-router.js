@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-    res.json(require('../collection/commentsCollection.json'))
-});
+const {commentsController} = require('../controllers')
+
+router.get('/',commentsController.getComments);
 
 module.exports = router;
