@@ -4,6 +4,6 @@ module.exports={
     commentsRouter: require('./comments-router'),
     placesRouter: require('./places-router'),
     drinkerRouter: require('./drinker-router')
-}
+};
 
 

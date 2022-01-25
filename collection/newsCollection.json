@@ -1,8 +1,7 @@
 [
   {
-    "id": 1,
     "placeId": 13,
-    "category": "events",
+    "category": "події",
     "title": "День студента",
     "description": "14 березня або хер зна коли, відбудеться вечірка ....",
     "picture": "https://aws.....",

@@ -1,6 +1,5 @@
 [
   {
-    "_id": 43,
     "name": "Макс",
     "surname": "Сторощук",
     "email": "ratata@gmail.com",
@@ -8,15 +7,36 @@
     "role": "user",
     "avatar": "https://aws...",
     "isCritic": false,
-    "favoritePlacesId": [13,52,33],
-    "commentsId": [2,87,14],
+    "favoritePlacesId": [
+      13,
+      52,
+      33
+    ],
+    "commentsId": [
+      2,
+      87,
+      14
+    ],
     "ratingPlaces": {
-      "1StarPlacesId": [],
-      "2StarPlacesId": [3,45],
-      "3StarPlacesId": [23,17],
-      "4StarPlacesId": [21,47,6],
-      "5StarPlacesId": [22,45,67]
-    },
-    "createdAt": "12.12.2012"
+      "StarPlacesId1": [],
+      "StarPlacesId2": [
+        3,
+        45
+      ],
+      "StarPlacesId3": [
+        23,
+        17
+      ],
+      "StarPlacesId4": [
+        21,
+        47,
+        6
+      ],
+      "StarPlacesId5": [
+        22,
+        45,
+        67
+      ]
+    }
   }
 ]

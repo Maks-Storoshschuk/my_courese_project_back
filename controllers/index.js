@@ -4,4 +4,4 @@ module.exports={
     newsController: require('./news-controller'),
     placesController: require('./places-controller'),
     usersController:require('./users-controller')
-}
+};
